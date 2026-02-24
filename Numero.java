@@ -1,12 +1,19 @@
 public class Numero {
-    private int valor;
-    public Numero(){
-        this.valor = 0;
+    private double valor;
+
+    public Numero() {
+        this(0.0);
     }
-    public void setValor(int valor){
+
+    public Numero(double valor) {
         this.valor = valor;
     }
-    public int getValor(){
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public double getValor() {
         return this.valor;
     }
 }
